@@ -1,0 +1,43 @@
+body{
+    background-image: url("assets/view-international-worker-s-day-still-life.jpg");
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur de la fenêtre */
+  margin: 0; /* Supprime les marges par défaut */
+  overflow: hidden; /* Empêche le défilement */
+  /* Ajustements pour l'image de fond */
+  background-size: cover; /* Adapte l'image pour qu'elle soit entièrement visible */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-position: center; /* Centre l'image */
+}
+
+  .game-space{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    opacity: 0.92;
+    padding: 20px;
+    font-size: larger;
+    border: 1px solid #403736;
+  }
+
+  h1{
+    color: #403736;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+  }
+
+  input{
+    width: 240px;
+    height: 60px;
+    border: 5px solid #403736;
+    border-radius: 20%;
+    font-size: 30px;
+  }
+
