@@ -1,5 +1,5 @@
 const dateInput = document.getElementById('date-input')
-const result = documentGetElementById('result')
+const result = document.getElementById('result')
 
 // Ajout d'un écouteur d'événement pour détecter les changements dans l'input
 //WARNING : date au format YYYY/MM/DD
@@ -10,12 +10,15 @@ dateInput.addEventListener('change', () => {
     const selectedDate = dateInput.value;
     if (selectedDate) { //si l'utilisateur rentre une date console.log ok
       console.log(`Date sélectionnée : ${selectedDate}`);
-    } else { //si l'utilisateur n'a pas rentrée de date consolo.log pas ok
-      console.log("La date n'est pas valide.");
+      result.innerText = "Super tu as choisi une date"
+        for(let i = 0; i< selectedDate.length; i++){ //je veux découper ma date en éléments ndividuels
+          let dateArray = selectedDate[i] 
+          console.log(dateArray) 
+          console.log(typeof(dateArray))
     }
-    for(let i = 0; i< selectedDate.length; i++){
-        let dateArray = selectedDate[i] 
-        console.log(dateArray) 
+
+    } else { //si l'utilisateur n'a pas rentré de date consolo.log pas ok
+      console.log("La date n'est pas valide.");
     }
   });
 

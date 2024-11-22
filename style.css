@@ -24,14 +24,23 @@ body{
     opacity: 0.92;
     padding: 20px;
     font-size: larger;
-    border: 1px solid #403736;
+    border: 1px solid #070707;
+    ;
   }
 
   h1{
-    color: #403736;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #070707;
+    font-family: "Gill Sans", sans-serif;
     font-size: 40px;
   }
+
+ #result{
+    color: #85185b;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 35px;
+  }
+
+
 
   input{
     width: 240px;
