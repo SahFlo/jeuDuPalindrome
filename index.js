@@ -2,7 +2,6 @@ const dateInput = document.getElementById('date-input')
 const result = document.getElementById('result')
 
 // Ajout d'un écouteur d'événement pour détecter les changements dans l'input
-//WARNING : date au format YYYY/MM/DD
 //Avec cette méthode mes heures sont vérifiées automatiquement grâce à input type date. Je dois juste faire attention parce que quand mon utilisateur tape 01/12/1995, mon programme ressort et utilise en js 1995/12/01
 // après ça ne m'empêche pas d'avancer et de vérifier le palindrome
 
