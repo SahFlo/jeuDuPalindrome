@@ -1,22 +1,25 @@
 const dateInput = document.getElementById('date-input')
+const result = documentGetElementById('result')
 
 // Ajout d'un écouteur d'événement pour détecter les changements dans l'input
 //WARNING : date au format YYYY/MM/DD
+//Avec cette méthode mes heures sont vérifiées automatiquement grâce à input type date. Je dois juste faire attention parce que quand mon utilisateur tape 01/12/1995, mon programme ressort et utilise en js 1995/12/01
+// après ça ne m'empêche pas d'avancer et de vérifier le palindrome
+
 dateInput.addEventListener('change', () => {
     const selectedDate = dateInput.value;
-    if (selectedDate) {
+    if (selectedDate) { //si l'utilisateur rentre une date console.log ok
       console.log(`Date sélectionnée : ${selectedDate}`);
-    } else {
+    } else { //si l'utilisateur n'a pas rentrée de date consolo.log pas ok
       console.log("La date n'est pas valide.");
     }
     for(let i = 0; i< selectedDate.length; i++){
-        let dateArray = selectedDate[i]
+        let dateArray = selectedDate[i] 
         console.log(dateArray) 
     }
   });
-//A ce stade tout marche.
-//J'obtiens bien ma date découpée signe par signe
-//A priori je dois retourner ma date en créant une fonction qui cette fois découpe ma date signe par signe par la fin puis compare avec la première date ???
-  
+
+
+
 
 
