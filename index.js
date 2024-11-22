@@ -12,22 +12,14 @@ function Palindrome() {
       // console.log(typeof(selectedDate)) //string donc pas un tableau
       
       if (selectedDate) { //user rentre une date valide, je compare pour trouver le palindrome         
-          let dateArray = selectedDate.split(''); //je découpe ma date en index regroupés dans un tableau         
-          console.log(dateArray)
-          console.log(Array.isArray(dateArray));
-            for(let i = 0; i <= dateArray.length; i ++){
-             // console.log(dateArray[i])
-             result.innerText = "ok date"
-             let nombres = dateArray.match(/\d+/g);
-             console.log(nombres)
-            }
-
-          
-      } else { //si l'utilisateur n'a pas rentré de date valide       
+        let onlyNumbers = selectedDate.match(/\d+/g)
+        console.log(onlyNumbers)
+       } else { //si l'utilisateur n'a pas rentré de date valide       
           console.log('Vous devez choisir une date');
       }   
-  });
-}  
+    })
+  }
+  
 
 Palindrome();
 
